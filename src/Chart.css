@@ -1,0 +1,11 @@
+/*Canvas*/
+#chart-svg{
+    border: black 1px solid;
+}
+
+
+.drag-selected {
+    stroke: #c6f2ff;
+    stroke-width: 8;
+    stroke-dasharray: 12, 12
+}
