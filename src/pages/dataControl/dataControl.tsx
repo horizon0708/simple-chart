@@ -1,9 +1,10 @@
 import * as React from "react";
 import { observer } from "mobx-react";
-import Store from "../services/store";
-import { container } from "../constants/inversify.config";
-import { DataInput } from "../components/dataInput";
-import { ChartDatum } from "../models/models";
+import Store from "../../services/store";
+import { container } from "../../constants/inversify.config";
+import { DataInput } from "../../components/dataInput";
+import { ChartDatum } from "../../models/models";
+import * as styles from './dataControl.css';
 
 @observer
 export default class DataControl extends React.Component {
@@ -57,7 +58,7 @@ export default class DataControl extends React.Component {
 
   renderDeleteButton() {
     return this.store.chartData[0].data.length > 1
-      ? <button onClick={this.deleteKeyValuePair}> Delete Datum </button>
+      ? <button className={`button`} onClick={this.deleteKeyValuePair}> Delete Datum </button>
       : null;
   }
 
@@ -65,8 +66,11 @@ export default class DataControl extends React.Component {
     return (
       <div>
         {this.renderDataList()}
-        <button onClick={this.addKeyValuePair}> Add Datum </button>
-        {this.renderDeleteButton()}
+          <div className={styles.buttons}>
+              <button className={`button`} onClick={this.addKeyValuePair}> Add Datum </button>
+              {this.renderDeleteButton()}
+          </div>
+
       </div>
     );
   }

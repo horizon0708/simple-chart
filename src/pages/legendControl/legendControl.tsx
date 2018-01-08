@@ -1,9 +1,10 @@
 import * as React from "react";
 import { observer } from "mobx-react";
-import Store from "../services/store";
-import { container } from "../constants/inversify.config";
-import LegendModel from "../models/legendModel";
-import { LegendInput } from "../components/legendInput";
+import Store from "../../services/store";
+import { container } from "../../constants/inversify.config";
+import LegendModel from "../../models/legendModel";
+import { LegendInput } from "../../components/legendInput";
+import * as styles from './legendControl.css';
 
 @observer
 export default class LegendControl extends React.Component {
@@ -12,6 +13,7 @@ export default class LegendControl extends React.Component {
   constructor(props: {}) {
     super(props);
     this.store = container.get<Store>(Store);
+    this.getValue = this.getValue.bind(this);
   }
 
   handleInput = (name: string) => (
@@ -23,7 +25,7 @@ export default class LegendControl extends React.Component {
     ) as LegendModel;
     newData[name] = target.value;
     this.store.chartData[0].legendOption = newData;
-  }
+  };
 
   getValue(param: string): number {
     if (this.store.chartData[0].legendOption.hasOwnProperty(param)) {
@@ -36,7 +38,7 @@ export default class LegendControl extends React.Component {
     return (
       <LegendInput
         parameter={param}
-        value={this.getValue(param)}
+        value={this.store.chartData[0].legendOption[param]}
         onChange={this.handleInput(param)}
         label={label || null}
       />
@@ -45,7 +47,7 @@ export default class LegendControl extends React.Component {
 
   render() {
     return (
-      <div className="wrapper">
+      <div className={styles.wrapper}>
         <div>
           {this.renderLegendInput("fontSize")}
         </div>

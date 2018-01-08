@@ -1,0 +1,8 @@
+.wrapper {
+   composes: wrapper from "../../style/grid.css";
+}
+
+.buttons{
+   display: flex;
+   justify-content: right;
+}

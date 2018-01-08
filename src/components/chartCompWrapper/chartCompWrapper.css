@@ -1,0 +1,17 @@
+.wrapper {
+    stroke: none;
+}
+
+.wrapper:hover {
+    stroke: blue;
+    stroke-width: 4;
+}
+
+
+.dragged {
+    stroke: "blue";
+    stroke-width: 8;
+    stroke-linecap: "round";
+    stroke-linejoin: "round";
+    stroke-dasharray: 5,5;
+}

@@ -23,8 +23,11 @@
     "postcss-loader": "2.0.6",
     "promise": "8.0.1",
     "react": "^16.2.0",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-dev-utils": "^4.0.1",
     "react-dom": "^16.2.0",
+    "react-motion": "^0.5.2",
+    "react-transition-group": "^2.2.1",
     "reflect-metadata": "^0.1.10",
     "source-map-loader": "^0.2.1",
     "style-loader": "0.18.2",
@@ -50,7 +53,9 @@
     "@types/jest": "^22.0.0",
     "@types/node": "^8.5.5",
     "@types/react": "^16.0.34",
-    "@types/react-dom": "^16.0.3"
+    "@types/react-addons-css-transition-group": "^15.0.3",
+    "@types/react-dom": "^16.0.3",
+    "typings-for-css-modules-loader": "^1.7.0"
   },
   "jest": {
     "mapCoverage": true,

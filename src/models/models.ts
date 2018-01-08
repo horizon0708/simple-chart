@@ -58,6 +58,8 @@ export class ChartDatum {
 
 export interface ID3Base {
     svgSelector: string;
+    draggable: boolean;
+    visible: boolean;
     sort: Sort;
     xOffset: number;
     yOffset: number;

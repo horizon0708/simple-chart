@@ -1,0 +1,44 @@
+.headBox {
+  display: inline-block;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  border-top: 1px black solid;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.closed {
+  composes: headBox;
+  border-bottom: 1px black solid;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.icon {
+  transform: translate(0, 50%);
+  margin: 0px 10px;
+}
+
+.heading {
+  font-size: 20px;
+  margin: 5px 10px;
+}
+
+.contentBox {
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  border-bottom: 1px black solid;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.content {
+  margin: 0px 10px;
+  padding: 10px 0px
+}
+
+.box {
+  margin: 5px 5px;
+}

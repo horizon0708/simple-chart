@@ -1,11 +1,11 @@
 import * as React from "react";
-import GraphNumberInput from "../components/graphNumberInput";
-import "./grid.css";
+import GraphNumberInput from "../../components/graphNumberInput";
+import * as styles from "./style.css";
 
 export default class PieControl extends React.Component {
   render() {
     return (
-      <div className="wrapper">
+      <div className={styles.wrapper}>
         <div>
           <GraphNumberInput parameter={"xTranslate"} label={"x position"} />
         </div>

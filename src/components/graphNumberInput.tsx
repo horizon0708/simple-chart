@@ -21,9 +21,10 @@ export default class GraphNumberInput extends React.Component<
   }
 
   handleNumericalInput = (name: string) => (event: React.FormEvent<HTMLInputElement>) => {
+      let target = event.target as HTMLInputElement;
+      if(isNaN(+target.value)) return;
     let newGO = Object.create(this.store.chartData[0].graphOption);
-    let target = event.target as HTMLInputElement;
-    newGO[name] = target.value;
+    newGO[name] = +target.value; //+ necessary because i lost type-safety!!!
     this.store.chartData[0].graphOption = newGO;
     this.store.test.b = target.value;
   }

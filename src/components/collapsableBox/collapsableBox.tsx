@@ -1,30 +1,37 @@
 import * as React from "react";
-import styles from "./style.css";
+import * as styles from "./style.css";
+
 interface CollapsableBoxState {
   open: boolean;
 }
 
+export interface CollapsableBoxProps {
+  header: string;
+}
+
 export default class CollapsableBox extends React.Component<
-  {},
+  CollapsableBoxProps,
   CollapsableBoxState
 > {
-  constructor(props: {}) {
+  constructor(props: CollapsableBoxProps) {
     super(props);
     this.state = {
-      open: false
+      open: true
     };
   }
 
   toggleOpen = () => {
     this.setState({ open: !this.state.open });
-  };
+  }
 
   renderContent() {
     if (this.state.open) {
       return (
-        <div className="card-content">
-          <div className="content">{this.props.children}</div>
-        </div>
+            <div className={styles.contentBox}>
+              <div className={styles.content}>
+                {this.props.children}
+              </div>
+            </div>
       );
     }
     return null;
@@ -32,11 +39,18 @@ export default class CollapsableBox extends React.Component<
 
   render() {
     return (
-      <div>
-        <div className="card-head">
-          <div className="heading">header</div>
-          <div className="toggle-open-icon" />
+      <div className={styles.box}>
+        <div className={this.state.open ? styles.headBox : styles.closed}>
+          <div className={styles.heading}>{this.props.header}</div>
+          <div>
+            <i
+              onClick={this.toggleOpen}
+              className={`fa ${this.state.open ? "fa-minus" : "fa-plus"} ${styles.icon}`}
+              aria-hidden="true"
+            />
+          </div>
         </div>
+        {this.renderContent()}
       </div>
     );
   }
