@@ -2,11 +2,12 @@ import * as React from "react";
 import * as styles from "../collapsableBox/style.css";
 import ToggleDragButton from "../toggleLockButton/toggleDragButton";
 import ToggleVisibleButton from "../toggleVisibleButton/toggleVisibleButton";
+import {ID3Base} from "../../models/models";
 
 
 interface ControlBoxProps{
     header: string;
-    selector: string;
+    model: ID3Base;
 }
 
 interface CollapsableBoxState {
@@ -44,8 +45,8 @@ export default class CollapsableControlBox extends React.Component<ControlBoxPro
                 <div className={this.state.open ? styles.headBox : styles.closed}>
                     <div className={styles.heading}>{this.props.header}</div>
                     <div>
-                        <ToggleVisibleButton  selector={this.props.selector} className={styles.icon}/>
-                        <ToggleDragButton selector={this.props.selector} className={styles.icon} />
+                        <ToggleVisibleButton  model={this.props.model} className={styles.icon}/>
+                        <ToggleDragButton model={this.props.model} className={styles.icon} />
                             <i
                                 onClick={this.toggleOpen}
                                 className={`fa ${this.state.open ? "fa-minus" : "fa-plus"} ${styles.icon}`}

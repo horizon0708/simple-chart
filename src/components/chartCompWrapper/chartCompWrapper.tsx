@@ -14,7 +14,6 @@ export default class ChartCompWrapper extends React.Component<ChartWrapperProps,
     componentDidMount() {
         ChartHelper.draw(this.props.drawOption, this.props.data);
         ChartHelper.attachDrag(this.props.drawOption);
-        console.log("selector: "+this.props.selector);
     }
 
     componentDidUpdate(){

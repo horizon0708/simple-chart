@@ -21,8 +21,7 @@ export default class GraphInput extends React.Component<GraphInputProps, {}> {
     let target = event.target as HTMLInputElement;
     newGO[name] = target.value;
     this.store.chartData[0].graphOption = newGO;
-    this.store.test.b = target.value;
-  }
+  };
 
   render() {
     return (

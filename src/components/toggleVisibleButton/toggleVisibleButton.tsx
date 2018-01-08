@@ -5,7 +5,7 @@ import {container} from "../../constants/inversify.config";
 import {ID3Base} from "../../models/models";
 
 interface Props {
-    selector: string;
+    model: ID3Base;
     className?: string;
 }
 
@@ -18,24 +18,11 @@ export default class ToggleVisibleButton extends React.Component<Props,{}>{
 
     store: Store;
 
-    getOption(): ID3Base{
-        switch(this.props.selector){
-            case("chart-svg"): {
-                return this.store.chartData[0].graphOption;
-            }
-            case("legend-svg"): {
-                return this.store.chartData[0].legendOption;
-            }
-            default:
-                return this.store.chartData[0].graphOption;
-        }
-    }
-
     // ... there has to be a better way of doing this surely.
     handleToggleVisible = () => {
-        let option = Object.create(this.getOption());
-        option.visible = !this.getOption().visible;
-        switch(this.props.selector){
+        let option = Object.create(this.props.model);
+        option.visible = !option.visible;
+        switch(this.props.model.svgSelector){
             case("chart-svg"): {
                 this.store.chartData[0].graphOption = option;
                 break;
@@ -52,7 +39,7 @@ export default class ToggleVisibleButton extends React.Component<Props,{}>{
 
     render(){
         return (
-            <i onClick={this.handleToggleVisible} className={`fa ${this.getOption().visible? "fa-eye": "fa-eye-slash"} ` + this.props.className} aria-hidden="true" />
+            <i onClick={this.handleToggleVisible} className={`fa ${this.props.model.visible? "fa-eye": "fa-eye-slash"} ` + this.props.className} aria-hidden="true" />
         )
     }
 }

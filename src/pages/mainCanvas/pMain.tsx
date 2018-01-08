@@ -14,13 +14,14 @@ export default class Main extends React.Component<{}, {}> {
   }
 
   render() {
-    const { graphOption, legendOption, data } = this.store.chartData[0];
+    const { graphOption, legendOption,titleOption, data } = this.store.chartData[0];
 
     return (
       <div style={{border:"1px solid black", width: 800}}>
           <svg id={"chart-canvas"} width={800} height={800} >
             <ChartCompWrapper drawOption={graphOption} data={data} selector={graphOption.svgSelector} />
               <ChartCompWrapper drawOption={legendOption} data={data} selector={legendOption.svgSelector} />
+            <ChartCompWrapper drawOption={titleOption} data={data} selector={titleOption.svgSelector}/>
           </svg>
       </div>
     );

@@ -1,5 +1,6 @@
 import LegendModel from "./legendModel";
 import PieModel from "./pieModel";
+import TitleModel from "./titleModel";
 
 export enum TextAnchor{
     start ="start",
@@ -36,6 +37,7 @@ export interface IChartData{
 export class ChartData implements IChartData{
     type: ChartType;
     data: ChartDatum[];
+    titleOption: TitleModel;
     graphOption: PieModel;
     legendOption: LegendModel;
     constructor(type: ChartType, data: ChartDatum[], go: PieModel, lo:LegendModel){
@@ -67,7 +69,6 @@ export interface ID3Base {
     yTranslate: number;
     color: d3.ScaleOrdinal<string, string>
 
-    getSelection(): any;
 
 }
 
@@ -76,6 +77,7 @@ export interface ID3Text extends ID3Base {
     fontSize: number;
     fontWeight: FontWeight | number;
     lineSpacing: number;
+    textAnchor: TextAnchor;
 }
 
 export interface ID3Pie extends ID3Base {

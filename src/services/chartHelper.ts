@@ -4,6 +4,7 @@ import LegendModel from "../models/legendModel";
 import {ChartDatum, ID3Base, Sort} from "../models/models";
 import PieModel from "../models/pieModel";
 import {Selection} from "d3-selection";
+import TitleModel from "../models/titleModel";
 
 export class ChartHelper {
   public static sort(sort: Sort) {
@@ -14,19 +15,19 @@ export class ChartHelper {
   }
 
   static delete(model: ID3Base) {
-    let selection = model.getSelection();
+    let selection = ChartHelper.getSelection(model);
     selection.selectAll("*").remove();
   }
 
   static draw(model: ID3Base, data: ChartDatum[]) {
     if(model instanceof PieModel){
-      console.log("pie");
       ChartHelper.drawPieArc(model, data);
     }
     if(model instanceof LegendModel){
-        console.log("legend");
-
         ChartHelper.drawLegend(model, data);
+    }
+    if(model instanceof TitleModel){
+      ChartHelper.drawTitle(model);
     }
   }
 
@@ -74,6 +75,17 @@ export class ChartHelper {
       .text(d => d.key);
   }
 
+  static drawTitle(model: TitleModel){
+    ChartHelper.getSelection(model)
+        .attr("transform",`translate(${[model.xTranslate, model.yTranslate]})` )
+        .append("text")
+        .attr("text-anchor", `${model.textAnchor}`)
+        .style("font-size", `${model.fontSize}px`)
+        .style("font-weight", `${model.fontWeight}`)
+        .attr("fill", "black")
+        .text(model.title);
+  }
+
     static getSelection(model: ID3Base): Selection<BaseType, {}, BaseType, any> {
         return select<SVGElement, {}>(`#${model.svgSelector}`);
     }
@@ -101,9 +113,6 @@ export class ChartHelper {
 
     static onDragged = (model: ID3Base) => {
         if(!model.draggable) return;
-        //const container = document.getElementById("chart-canvas") as HTMLElement;
-        // model.xTranslate = d3.mouse(container)[0];
-        // model.yTranslate = d3.mouse(container)[1];
         model.xTranslate += d3.event.dx;
         model.yTranslate += d3.event.dy;
         d3.select(`#${model.svgSelector}`)

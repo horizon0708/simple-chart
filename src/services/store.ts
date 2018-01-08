@@ -3,6 +3,7 @@ import { computed, observable } from "mobx";
 import PieModel from "../models/pieModel";
 import LegendModel from "../models/legendModel";
 import { ChartData, ChartDatum, ChartType } from "../models/models";
+import TitleModel from "../models/titleModel";
 
 @injectable()
 export default class Store {
@@ -15,6 +16,7 @@ export default class Store {
   chartData: ChartData[] = [
     {
       type: ChartType.pie,
+        titleOption: new TitleModel("title-svg"),
       graphOption: new PieModel("chart-svg"),
       legendOption: new LegendModel("legend-svg"),
       data: [
