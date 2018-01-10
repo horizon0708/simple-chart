@@ -27,11 +27,21 @@ export default class DataControl extends React.Component<colorPickerGroupProps, 
   ) => {
     const target = event.target as HTMLInputElement;
     let newData = Object.create(this.store.chartData[0].data);
+    this.store.editKeyName(newData[index][name], target.value);
     newData[index][name] = target.value;
     this.store.chartData[0].data = newData;
   };
 
-  // TODO: add randomised color on add ... it will crash after 30....
+    handleNumber = (index: number) => (
+        event: React.FormEvent<HTMLInputElement>
+    ) => {
+        const target = event.target as HTMLInputElement;
+        if(isNaN(+target.value)) { return }
+        let newData = Object.create(this.store.chartData[0].data);
+        newData[index].value = +target.value;
+        this.store.chartData[0].data = newData;
+    };
+
   addKeyValuePair = () => {
       let newData = Object.create(this.store.chartData[0].data);
         this.store.addKeyColor( `new datum ${newData.length}`);
@@ -67,7 +77,6 @@ export default class DataControl extends React.Component<colorPickerGroupProps, 
         this.store.updateKeyToColorMap(key, color.hex);
       let newData = Object.create(this.store.chartData[0].data) as ChartDatum[];
       this.store.chartData[0].data = newData;
-
   };
 
   renderDataList() {
@@ -77,7 +86,7 @@ export default class DataControl extends React.Component<colorPickerGroupProps, 
               key={i}
               color={ col ? ColorHelper.hexToRgb(col.color): "#000000" }
               onColorChange={this.changeColor(x.key)}
-              onValueChange={this.handleInput(i, "value")}
+              onValueChange={this.handleNumber(i)}
               onKeyChange={this.handleInput(i, "key")}
               name={x.key}
               value={x.value}

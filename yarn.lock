@@ -220,6 +220,12 @@
   version "16.0.34"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.34.tgz#7a8f795afd8a404a9c4af9539b24c75d3996914e"
 
+"@types/reactcss@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@types/reactcss/-/reactcss-1.2.1.tgz#1671cb938f880c4b7632e540280341b85e17768a"
+  dependencies:
+    "@types/react" "*"
+
 abab@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"

@@ -7,6 +7,4 @@ declare module 'react' {
     }
 }
 
-declare module 'react-color';
-
 //https://github.com/zeit/styled-jsx/issues/90
