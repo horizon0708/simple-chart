@@ -1,0 +1,30 @@
+@value global: "../../style/global.css";
+@value primary from global;
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: primary;
+
+}
+
+.container{
+    height: 55px;
+    display: flex;
+    width: 1347px;
+    justify-content: space-between;
+}
+
+.headerItemContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headerItem{
+    margin: 5px;
+}
+
+.customButton{
+    composes: customButton from '../../style/global.css';
+}

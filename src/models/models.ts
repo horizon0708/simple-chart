@@ -1,6 +1,7 @@
 import LegendModel from "./legendModel";
 import PieModel from "./pieModel";
 import TitleModel from "./titleModel";
+import {observable} from "mobx";
 
 export enum TextAnchor{
     start ="start",
@@ -28,6 +29,11 @@ export enum ChartType {
     pie = "CHART_TYPE_PIE"
 }
 
+export class KeyToColor {
+    key: string;
+    color: string;
+}
+
 export interface IChartData{
     type: ChartType;
     data: ChartDatum[];
@@ -52,9 +58,11 @@ export class ChartData implements IChartData{
 export class ChartDatum {
     key: string;
     value: number;
-    constructor(key:string, value: number){
+    y: string;
+    constructor(key:string, value: number, y?: string){
         this.key = key;
         this.value = value;
+        y ? this.y = y : null;
     }
 }
 
@@ -67,7 +75,7 @@ export interface ID3Base {
     yOffset: number;
     xTranslate: number;
     yTranslate: number;
-    color: d3.ScaleOrdinal<string, string>
+    color: string[];
 
 
 }
@@ -95,3 +103,18 @@ export interface IDraggable extends ID3Base{
     onDragged:  ()=>void;
     onDragEnd: ()=>void;
 }
+
+export class RGBA {
+    @observable r: number;
+    @observable g: number;
+    @observable b: number;
+    @observable a: number;
+
+    constructor(r:number,g:number,b:number,a:number){
+        this.r = r;
+        this.g = g;
+        this.b = b;
+        this.a = a;
+    }
+}
+

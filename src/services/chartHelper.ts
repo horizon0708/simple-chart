@@ -1,10 +1,11 @@
 import {arc, Arc, BaseType, pie, Pie, select} from "d3";
 import * as d3 from "d3";
 import LegendModel from "../models/legendModel";
-import {ChartDatum, ID3Base, Sort} from "../models/models";
-import PieModel from "../models/pieModel";
+import {ChartDatum, ID3Base, KeyToColor, Sort} from "../models/models";
+import PieModel from "../models/pieModel";``
 import {Selection} from "d3-selection";
 import TitleModel from "../models/titleModel";
+import {SortHelper} from "./sortHelper";
 
 export class ChartHelper {
   public static sort(sort: Sort) {
@@ -19,39 +20,45 @@ export class ChartHelper {
     selection.selectAll("*").remove();
   }
 
-  static draw(model: ID3Base, data: ChartDatum[]) {
+  static draw(model: ID3Base, data: ChartDatum[], color: KeyToColor[]) {
     if(model instanceof PieModel){
-      ChartHelper.drawPieArc(model, data);
+      ChartHelper.drawPieArc(model, data, color);
     }
     if(model instanceof LegendModel){
-        ChartHelper.drawLegend(model, data);
+        ChartHelper.drawLegend(model, data, color);
     }
     if(model instanceof TitleModel){
       ChartHelper.drawTitle(model);
     }
   }
 
-  static drawPieArc(pieModel: PieModel, data: ChartDatum[]) {
-    let selection = pieModel.getSelection();
+  static drawPieArc(pieModel: PieModel, data: ChartDatum[], color: KeyToColor[]) {
+      let preppedData = SortHelper.getHighest(data);
+      let selection = pieModel.getSelection();
     let arc = <d3.Selection<BaseType, any, BaseType, any>>selection
       .attr(
         "transform",
         `translate(${[pieModel.xTranslate, pieModel.yTranslate]})`
       )
       .selectAll(".arc")
-      .data(pieModel.getPie()(data))
+      .data(pieModel.getPie()(preppedData))
       .enter()
       .append("g")
       .attr("class", "arc");
     arc
       .append("path")
       .attr("d", pieModel.getPiePath())
-      .attr("fill", (f: any) => pieModel.color(f.data.key));
+      .attr("fill", (f: any,i:number) => {
+              const col = color.find(x=>x.key === f.data.key);
+              return col?  col.color :"#000000";
+      }
+          );
 
   }
 
-  static drawLegend(legend: LegendModel, data: ChartDatum[]): void {
-    let selection = legend.getSelection();
+  static drawLegend(legend: LegendModel, data: ChartDatum[], color: KeyToColor[]): void {
+      let preppedData = SortHelper.getHighest(data);
+      let selection = legend.getSelection();
     const textSelection = selection
       .attr(
         "transform",
@@ -61,7 +68,7 @@ export class ChartHelper {
 
     textSelection
         .selectAll(".pie-chart-text")
-        .data(data)
+        .data(preppedData)
         .enter()
       .append("text")
       .sort((a, b) => a.value - b.value)
@@ -69,10 +76,14 @@ export class ChartHelper {
       .attr("text-anchor", `${legend.textAnchor}`)
       .style("font-size", `${legend.fontSize}px`)
       .style("font-weight", `${legend.fontWeight}`)
-      .attr("fill", d => legend.color(d.key))
+      .attr("fill", (d,i) => {
+          const col = color.find(x=>x.key === d.key);
+          return col?  col.color :"#000000";
+      })
       .attr("y", (d, i, node) => legend.getY(d, i, node))
       .attr("x", () => legend.getX())
       .text(d => d.key);
+
   }
 
   static drawTitle(model: TitleModel){
@@ -82,7 +93,7 @@ export class ChartHelper {
         .attr("text-anchor", `${model.textAnchor}`)
         .style("font-size", `${model.fontSize}px`)
         .style("font-weight", `${model.fontWeight}`)
-        .attr("fill", "black")
+        .attr("fill", `${model.color[0]}`)
         .text(model.title);
   }
 

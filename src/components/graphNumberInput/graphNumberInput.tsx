@@ -1,7 +1,8 @@
-import { container } from "../constants/inversify.config";
-import Store from "../services/store";
+import { container } from "../../constants/inversify.config";
+import Store from "../../services/store";
 import * as React from "react";
 import { observer } from "mobx-react";
+import * as style from './graphNumberInput.css';
 
 interface GraphInputProps {
   label?: string;
@@ -27,19 +28,20 @@ export default class GraphNumberInput extends React.Component<
     newGO[name] = +target.value; //+ necessary because i lost type-safety!!!
     this.store.chartData[0].graphOption = newGO;
     this.store.test.b = target.value;
-  }
+  };
 
   render() {
     return (
-      <div className="field">
-        <label className="label">
+      <div className={`field ${style.container}`}>
+        <label className={style.customLabel}>
           {this.props.label || this.props.parameter}
         </label>
         <div className="control">
           <input
             value={this.store.chartData[0].graphOption[this.props.parameter]}
             onChange={this.handleNumericalInput(this.props.parameter)}
-            className="input"
+            className="customInput"
+            style={{margin: 0, border: "none"}}
             type="text"
             placeholder="Text input"
           />

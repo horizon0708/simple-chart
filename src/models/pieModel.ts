@@ -1,7 +1,5 @@
 import {
     Pie,
-    scaleOrdinal,
-    schemeCategory10,
     BaseType,
     select,
     pie,
@@ -9,28 +7,29 @@ import {
     Arc
 } from "d3";
 import {Selection} from "d3-selection";
-import * as d3 from "d3";
-import {ChartDatum, ID3Pie, Sort} from "./models";
+import {ChartDatum, ID3Pie, KeyToColor, Sort} from "./models";
 import {observable} from "mobx";
+import {defaultColor} from "../constants/constants";
 
 export default class PieModel implements ID3Pie {
 @observable draggable: boolean = true;
 @observable visible: boolean = true;
     @observable xOffset: number = 0;
     @observable yOffset: number = 0;
-    @observable xTranslate: number = 300;
-    @observable yTranslate: number = 300;
+    @observable xTranslate: number = 265;
+    @observable yTranslate: number = 330;
     @observable radius: number = 200;
     @observable svgSelector: string;
-    @observable color: d3.ScaleOrdinal<string, string> = scaleOrdinal(
-        schemeCategory10
-    );
+    @observable color: string[] = defaultColor;
+
 
     @observable arcPadding: number = 0.02;
     @observable startAngle: number = 0;
     @observable sort: Sort = Sort.ascending;
     @observable innerRadius: number = 80; // this should be calculated based on width/height
     @observable outerRadius: number = 0;
+
+    @observable keyToColorMap: KeyToColor[] = [];
 
     constructor(svgSelector: string) {
         this.svgSelector = svgSelector;

@@ -48,21 +48,22 @@ export default class LegendControl extends React.Component {
   render() {
     return (
       <div className={styles.wrapper}>
+          <div>
+              {this.renderLegendInput("xTranslate", "x")}
+          </div>
+          <div>
+              {this.renderLegendInput("yTranslate", "y")}
+          </div>
         <div>
-          {this.renderLegendInput("fontSize")}
+          {this.renderLegendInput("fontSize", "size")}
         </div>
         <div>
-          {this.renderLegendInput("fontWeight")}
+          {this.renderLegendInput("fontWeight", "weight")}
         </div>
         <div>
-          {this.renderLegendInput("lineSpacing")}
+          {this.renderLegendInput("lineSpacing", "spacing")}
         </div>
-        <div>
-          {this.renderLegendInput("xTranslate", "x position")}
-        </div>
-        <div>
-          {this.renderLegendInput("yTranslate", "y position")}
-        </div>
+
       </div>
     );
   }

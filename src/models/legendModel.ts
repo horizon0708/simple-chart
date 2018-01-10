@@ -1,31 +1,30 @@
 import {
-  scaleOrdinal,
-  schemeCategory10,
   select,
   Selection,
   BaseType
 } from "d3";
-import { FontWeight, ID3Text, Sort, TextAnchor } from "./models";
+import {FontWeight, ID3Text, KeyToColor, Sort, TextAnchor} from "./models";
 import {observable} from "mobx";
+import {defaultColor} from "../constants/constants";
 
 export default class LegendModel implements ID3Text {
     @observable draggable: boolean = true;
     @observable visible: boolean = true;
   public svgSelector: string;
 
-  @observable fontSize: number = 14;
+  @observable fontSize: number = 36;
     @observable textAnchor: TextAnchor = TextAnchor.start;
     @observable fontWeight: FontWeight | number = FontWeight.normal;
     @observable lineSpacing: number = 1.2;
   public sort: Sort = Sort.ascending;
   //
-  public xOffset: number = 0;
+    @observable keyToColorMap: KeyToColor[] = [];
+
+    public xOffset: number = 0;
   public yOffset: number = 0;
-  @observable xTranslate: number = 250;
-  @observable yTranslate: number = 250;
-  public color: d3.ScaleOrdinal<string, string> = scaleOrdinal(
-    schemeCategory10
-  );
+  @observable xTranslate: number = 500;
+  @observable yTranslate: number = 330;
+  public color: string[] = defaultColor;
 
   constructor(svgSelector: string) {
     this.svgSelector = svgSelector;

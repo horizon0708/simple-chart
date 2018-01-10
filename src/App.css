@@ -1,8 +1,6 @@
+@value global: "./style/global.css";
+@value dark, primary, border, canvas, background from global;
 
-
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.background{
+  background-color: #dbd6ce;
 }
-

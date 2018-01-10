@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as styles from "../collapsableBox/style.css";
+import * as styles from "./collapsableControlBox.css";
 import ToggleDragButton from "../toggleLockButton/toggleDragButton";
 import ToggleVisibleButton from "../toggleVisibleButton/toggleVisibleButton";
 import {ID3Base} from "../../models/models";
@@ -24,7 +24,7 @@ export default class CollapsableControlBox extends React.Component<ControlBoxPro
 
     toggleOpen = () => {
         this.setState({ open: !this.state.open });
-    }
+    };
 
     renderContent() {
         if (this.state.open) {

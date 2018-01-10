@@ -17,7 +17,7 @@ const LegendInput = (props: LegendInputProps) => {
         <input
           value={props.value}
           onChange={props.onChange}
-          className="input"
+          className="customInput"
           type="text"
           placeholder="Text input"
         />

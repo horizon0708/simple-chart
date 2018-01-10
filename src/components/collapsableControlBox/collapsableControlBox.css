@@ -1,0 +1,52 @@
+@value global: "../../style/global.css";
+@value dark, primary, border from global;
+
+.headerContainer{
+
+}
+
+.headBox {
+    /*border-left: 1px border solid;*/
+    /*border-right: 1px border solid;*/
+    /*border-top: 1px border solid;*/
+    /*border-top-left-radius: 5px;*/
+    /*border-top-right-radius: 5px;*/
+    background: dark;
+    display: flex;
+    justify-content: space-between;
+}
+
+.closed {
+    composes: headBox;
+    /*border-bottom: 1px black solid;*/
+    /*border-bottom-left-radius: 5px;*/
+    /*border-bottom-right-radius: 5px;*/
+}
+
+.icon {
+    transform: translate(0, 50%);
+    margin: 0 10px;
+}
+
+.heading {
+    font-size: 20px;
+    margin: 5px 10px;
+}
+
+.contentBox {
+    /*border-left: 1px black solid;*/
+    /*border-right: 1px black solid;*/
+    /*border-bottom: 1px black solid;*/
+    /*border-bottom-left-radius: 5px;*/
+    /*border-bottom-right-radius: 5px;*/
+    background: primary;
+}
+
+.content {
+    margin: 0px 10px;
+    padding: 10px 0px
+}
+
+.box {
+    margin: 0 0px;
+}

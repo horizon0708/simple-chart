@@ -1,0 +1,11 @@
+@value global: "../../style/global.css";
+@value dark, primary, border, canvas from global;
+
+.container{
+    margin-top: 20px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}

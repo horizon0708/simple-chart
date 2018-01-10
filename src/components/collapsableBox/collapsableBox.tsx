@@ -22,7 +22,7 @@ export default class CollapsableBox extends React.Component<
 
   toggleOpen = () => {
     this.setState({ open: !this.state.open });
-  }
+  };
 
   renderContent() {
     if (this.state.open) {

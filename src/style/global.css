@@ -1,0 +1,60 @@
+@value primary: #E9E7DC;
+@value dark: #D1C2A4;
+@value border: #87a397;
+@value canvas: #f7f5ef;
+@value background: #5b5a58;
+
+/*8e8d8a*/
+@value jellybeanRedLight: #e98074;
+@value jellybeanRed: #C95E54;
+@value taupeGray: #8C8C88;
+@value darkVanilaGrey: #3a3a38;
+
+:global(.customButton) {
+    background-color: jellybeanRed;
+    color: darkVanilaGrey;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    padding-bottom: calc(.5em - 1px);
+
+    padding-left: calc(.95em - 1px);
+
+    padding-right: calc(.95em - 1px);
+
+    padding-top: calc(.5em - 1px);
+
+    position: relative;
+    font-size: 1.1em;
+}
+
+:global(.grid-wrapper) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(auto, auto);
+}
+
+:global(body){
+    background-color: #dbd6ce;
+    min-height: 1080px;
+
+}
+
+:global(.customInput){
+    align-item: center;
+    background-color: white;
+    border: 0px solid white;
+    font-size: 16px;
+    font-weight: 400;
+    height: 36px;
+    line-height: 24px;
+    padding: 5px 9px;
+    text-align: start;
+    position: relative;
+    vertical-align:top;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+}
+
+

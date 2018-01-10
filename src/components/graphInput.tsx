@@ -26,14 +26,14 @@ export default class GraphInput extends React.Component<GraphInputProps, {}> {
   render() {
     return (
       <div className="field">
-        <label className="label">
+        <label style={{marginBottom:"40px"}}>
           {this.props.label || this.props.parameter}
         </label>
         <div className="control">
           <input
             value={this.store.chartData[0].graphOption[this.props.parameter]}
             onChange={this.handleInput(this.props.parameter)}
-            className="input"
+            className="customInput"
             type="text"
             placeholder="Text input"
           />

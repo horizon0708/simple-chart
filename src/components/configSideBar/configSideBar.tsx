@@ -6,7 +6,8 @@ import CollapsableControlBox from "../collapsableControlBox/collapsableControlBo
 import CollapsableBox from "../collapsableBox/collapsableBox";
 import PieControl from "../../pages/pieControl/pieControl";
 import LegendControl from "../../pages/legendControl/legendControl";
-import DataControl from "../../pages/dataControl/dataControl";
+import TitleControl from "../../pages/titleControl/titleControl";
+import CanvasControl from "../../pages/canvasControl/canvasControl";
 
 @observer
 export default class ConfigSideBar extends React.Component{
@@ -19,9 +20,10 @@ export default class ConfigSideBar extends React.Component{
     render(){
         return(
           <div>
+              <CollapsableBox header={"Canvas"}><CanvasControl /></CollapsableBox>
               <CollapsableControlBox model={this.store.chartData[0].graphOption} header={"Chart"}><PieControl /></CollapsableControlBox>
+              <CollapsableControlBox model={this.store.chartData[0].titleOption} header={"Title"}><TitleControl /></CollapsableControlBox>
               <CollapsableControlBox model={this.store.chartData[0].legendOption} header={"Legend"}><LegendControl /></CollapsableControlBox>
-              <CollapsableBox header={"Data"}><DataControl /></CollapsableBox>
           </div>
         );
     }

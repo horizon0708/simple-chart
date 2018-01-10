@@ -1,0 +1,12 @@
+@value global: "../../style/global.css";
+@value dark, primary, border, darkVanilaGrey from global;
+
+
+.container {
+    color: darkVanilaGrey;
+}
+
+.customLabel{
+    margin-bottom: 2px;
+    font-weight: bold;
+}

@@ -1,24 +1,31 @@
+@value global: "../../style/global.css";
+@value dark, primary, border from global;
+
+.headerContainer{
+
+}
+
 .headBox {
-  display: inline-block;
-  border-left: 1px black solid;
-  border-right: 1px black solid;
-  border-top: 1px black solid;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  /*border-left: 1px border solid;*/
+  /*border-right: 1px border solid;*/
+  /*border-top: 1px border solid;*/
+  /*border-top-left-radius: 5px;*/
+  /*border-top-right-radius: 5px;*/
+  background: dark;
   display: flex;
   justify-content: space-between;
 }
 
 .closed {
   composes: headBox;
-  border-bottom: 1px black solid;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  /*border-bottom: 1px black solid;*/
+  /*border-bottom-left-radius: 5px;*/
+  /*border-bottom-right-radius: 5px;*/
 }
 
 .icon {
   transform: translate(0, 50%);
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .heading {
@@ -27,11 +34,12 @@
 }
 
 .contentBox {
-  border-left: 1px black solid;
-  border-right: 1px black solid;
-  border-bottom: 1px black solid;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  /*border-left: 1px black solid;*/
+  /*border-right: 1px black solid;*/
+  /*border-bottom: 1px black solid;*/
+  /*border-bottom-left-radius: 5px;*/
+  /*border-bottom-right-radius: 5px;*/
+  background: primary;
 }
 
 .content {
@@ -40,5 +48,5 @@
 }
 
 .box {
-  margin: 5px 5px;
+  margin: 0 0px;
 }
