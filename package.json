@@ -50,7 +50,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
   },
   "devDependencies": {
     "@types/jest": "^22.0.0",
@@ -110,5 +112,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "homepage": "https://myusername.github.io/my-app"
 }

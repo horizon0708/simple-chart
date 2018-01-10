@@ -2,62 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da645204-b6bd-4fc1-9a95-187b8c0eb9d0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.babelrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/collapsableControlBox/collapsableControlBox.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/colorPicker/ColorPicker.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/footer/footer.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/genericInput/genericInput.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/genericInput/genericInput.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/genericNumericalInput/genericNumericalInput.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/genericNumericalInput/genericNumericalInput.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/graphNumberInput/graphNumberInput.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/header/Header.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/header/header.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/modelColorPicker/colorPickerGroup.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/modelColorPicker/modelColorPicker.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/moreGenericNumberInput/moreGenericNumberInput.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/moreGenericNumberInput/moreGenericNumberInput.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/constants/constants.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/constants/typings.d.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/pages/canvasControl/canvasControl.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/pages/canvasControl/canvasControl.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/pages/mainCanvas/mainCanvas.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/pages/titleControl/titleControl.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/services/colorHelper.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/services/onResize.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/services/saveSvgAsPng.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/services/sortHelper.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/style/global.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/App.css" />
-      <change beforePath="$PROJECT_DIR$/src/App.css.d.ts" afterPath="$PROJECT_DIR$/src/App.css.d.ts" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" afterPath="$PROJECT_DIR$/src/App.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/components/chartCompWrapper/chartCompWrapper.tsx" afterPath="$PROJECT_DIR$/src/components/chartCompWrapper/chartCompWrapper.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/components/collapsableBox/collapsableBox.tsx" afterPath="$PROJECT_DIR$/src/components/collapsableBox/collapsableBox.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/components/collapsableBox/style.css" afterPath="$PROJECT_DIR$/src/components/collapsableBox/style.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/collapsableBox/style.css.d.ts" afterPath="$PROJECT_DIR$/src/components/collapsableBox/style.css.d.ts" />
-      <change beforePath="$PROJECT_DIR$/src/components/collapsableControlBox/collapsableControlBox.tsx" afterPath="$PROJECT_DIR$/src/components/collapsableControlBox/collapsableControlBox.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/components/configSideBar/configSideBar.tsx" afterPath="$PROJECT_DIR$/src/components/configSideBar/configSideBar.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/components/dataInput.tsx" afterPath="$PROJECT_DIR$/src/components/dataInput.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/components/graphInput.tsx" afterPath="$PROJECT_DIR$/src/components/graphInput.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/components/graphNumberInput.tsx" afterPath="$PROJECT_DIR$/src/components/graphNumberInput/graphNumberInput.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/components/legendInput.tsx" afterPath="$PROJECT_DIR$/src/components/legendInput.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/models/legendModel.ts" afterPath="$PROJECT_DIR$/src/models/legendModel.ts" />
-      <change beforePath="$PROJECT_DIR$/src/models/models.ts" afterPath="$PROJECT_DIR$/src/models/models.ts" />
-      <change beforePath="$PROJECT_DIR$/src/models/pieModel.ts" afterPath="$PROJECT_DIR$/src/models/pieModel.ts" />
-      <change beforePath="$PROJECT_DIR$/src/models/titleModel.ts" afterPath="$PROJECT_DIR$/src/models/titleModel.ts" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dataControl/dataControl.tsx" afterPath="$PROJECT_DIR$/src/pages/dataControl/dataControl.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/pages/legendControl/legendControl.tsx" afterPath="$PROJECT_DIR$/src/pages/legendControl/legendControl.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mainCanvas/pMain.tsx" afterPath="$PROJECT_DIR$/src/pages/mainCanvas/pMain.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/pages/pTestWrapper.tsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/pieControl/pieControl.tsx" afterPath="$PROJECT_DIR$/src/pages/pieControl/pieControl.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/pages/pieControl/titleControl.tsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/services/chartHelper.ts" afterPath="$PROJECT_DIR$/src/services/chartHelper.ts" />
-      <change beforePath="$PROJECT_DIR$/src/services/store.ts" afterPath="$PROJECT_DIR$/src/services/store.ts" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -87,7 +33,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/footer/footer.tsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="748">
-                  <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                  <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -97,7 +43,7 @@
             <entry file="file://$PROJECT_DIR$/src/models/titleModel.ts">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="748">
-                  <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+                  <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
                   <folding>
                     <element signature="e#0#63#0" expanded="true" />
                   </folding>
@@ -109,7 +55,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/dataInput.tsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="816">
-                  <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+                  <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -117,11 +63,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="store.ts" pinned="false" current-in-tab="true">
+          <file leaf-file-name="store.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/services/store.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1462">
-                  <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+                <state relative-caret-position="782">
+                  <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -129,11 +75,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pMain.tsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/mainCanvas/pMain.tsx">
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="850">
-                  <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+                <state relative-caret-position="3910">
+                  <caret line="115" column="51" lean-forward="false" selection-start-line="115" selection-start-column="51" selection-end-line="115" selection-end-column="51" />
                   <folding />
                 </state>
               </provider>
@@ -143,7 +89,7 @@
             <entry file="file://$PROJECT_DIR$/src/App.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="170">
-                  <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+                  <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -153,7 +99,7 @@
             <entry file="file://$PROJECT_DIR$/src/pages/dataControl/dataControl.tsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-338">
-                  <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+                  <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                     <marker date="1515566532456" expanded="true" signature="2296:2790" ph="{...}" />
@@ -202,7 +148,7 @@
             <entry file="file://$PROJECT_DIR$/src/pages/titleControl/titleControl.tsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="510">
-                  <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+                  <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -236,7 +182,7 @@
             <entry file="file://$PROJECT_DIR$/src/pages/dataControl/dataControl.tsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="505">
-                  <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+                  <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -248,7 +194,7 @@
             <entry file="file://$PROJECT_DIR$/src/services/colorHelper.ts">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="986">
-                  <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+                  <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -287,8 +233,8 @@
           <file leaf-file-name="legendModel.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/models/legendModel.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="816">
-                  <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+                <state relative-caret-position="850">
+                  <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
                   <folding>
                     <element signature="e#0#55#0" expanded="true" />
                   </folding>
@@ -334,7 +280,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/graphNumberInput.tsx" />
         <option value="$PROJECT_DIR$/src/components/graphNumberInput/graphNumberInput.css" />
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/src/components/toggleVisibleButton/genericNumericalInput.tsx" />
@@ -385,6 +330,7 @@
         <option value="$PROJECT_DIR$/src/models/pieModel.ts" />
         <option value="$PROJECT_DIR$/src/models/legendModel.ts" />
         <option value="$PROJECT_DIR$/src/services/store.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -399,7 +345,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="8362" />
     <option name="y" value="219" />
     <option name="width" value="1920" />
@@ -488,7 +434,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="leg&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/legendModel.ts&#10;legend&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/legendControl/legendControl.tsx&#10;store&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/store.ts&#10;piemo&#9;null&#9;null&#10;pie&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/pieModel.ts&#10;title&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/titleModel.ts&#10;Foo&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/footer/footer.tsx&#10;apptsx&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/App.tsx&#10;foot&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/footer/footer.tsx&#10;appts&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/App.tsx&#10;global&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/style/global.css&#10;app&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/App.tsx&#10;appcss&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/App.css&#10;dataco&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/dataControl/dataControl.tsx&#10;colorh&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/colorHelper.ts&#10;pmain&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/mainCanvas/pMain.tsx&#10;h&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/chartHelper.ts&#10;wrap&#9;null&#9;null&#10;charth&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/chartHelper.ts&#10;data&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/dataInput.tsx&#10;legen&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/legendModel.ts&#10;colorp&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/modelColorPicker/colorPickerGroup.tsx&#10;color&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/modelColorPicker/modelColorPicker.tsx&#10;charthe&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/chartHelper.ts&#10;charh&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/chartHelper.ts&#10;piem&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/pieModel.ts&#10;key&#9;null&#9;null&#10;models&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/models.ts&#10;mo&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/pieModel.ts&#10;sort&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/sortHelper.ts&#10;datacon&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/dataControl/dataControl.tsx&#10;model&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/pieModel.ts&#10;legendmod&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/legendModel.ts&#10;legendop&#9;null&#9;null&#10;piemod&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/pieModel.ts&#10;titlem&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/titleModel.ts&#10;header&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/header/Header.tsx&#10;heder&#9;null&#9;null&#10;titleco&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/titleControl/titleControl.tsx&#10;datain&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/dataInput.tsx&#10;datainput&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/dataInput.tsx&#10;legendc&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/legendControl/legendControl.tsx&#10;piecon&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/pieControl/pieControl.tsx&#10;colorpi&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/colorPicker/ColorPicker.tsx&#10;canvas&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/canvasControl/canvasControl.tsx&#10;generi&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/genericInput/genericInput.css&#10;generic&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/genericInput/genericInput.css&#10;colo&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/colorPicker/ColorPicker.tsx&#10;modelcolo&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/modelColorPicker/modelColorPicker.tsx&#10;titlemodel&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/titleModel.ts" />
+    <property name="SearchEverywhereHistoryKey" value="packa&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/package.json&#10;leg&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/legendModel.ts&#10;legend&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/legendControl/legendControl.tsx&#10;store&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/store.ts&#10;piemo&#9;null&#9;null&#10;pie&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/pieModel.ts&#10;title&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/titleModel.ts&#10;Foo&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/footer/footer.tsx&#10;apptsx&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/App.tsx&#10;foot&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/footer/footer.tsx&#10;appts&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/App.tsx&#10;global&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/style/global.css&#10;app&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/App.tsx&#10;appcss&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/App.css&#10;dataco&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/dataControl/dataControl.tsx&#10;colorh&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/colorHelper.ts&#10;pmain&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/mainCanvas/pMain.tsx&#10;h&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/chartHelper.ts&#10;wrap&#9;null&#9;null&#10;charth&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/chartHelper.ts&#10;data&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/dataInput.tsx&#10;legen&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/legendModel.ts&#10;colorp&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/modelColorPicker/colorPickerGroup.tsx&#10;color&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/modelColorPicker/modelColorPicker.tsx&#10;charthe&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/chartHelper.ts&#10;charh&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/chartHelper.ts&#10;piem&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/pieModel.ts&#10;key&#9;null&#9;null&#10;models&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/models.ts&#10;mo&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/pieModel.ts&#10;sort&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/services/sortHelper.ts&#10;datacon&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/dataControl/dataControl.tsx&#10;model&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/pieModel.ts&#10;legendmod&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/legendModel.ts&#10;legendop&#9;null&#9;null&#10;piemod&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/pieModel.ts&#10;titlem&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/models/titleModel.ts&#10;header&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/header/Header.tsx&#10;heder&#9;null&#9;null&#10;titleco&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/titleControl/titleControl.tsx&#10;datain&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/dataInput.tsx&#10;datainput&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/dataInput.tsx&#10;legendc&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/legendControl/legendControl.tsx&#10;piecon&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/pieControl/pieControl.tsx&#10;colorpi&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/colorPicker/ColorPicker.tsx&#10;canvas&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/pages/canvasControl/canvasControl.tsx&#10;generi&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/genericInput/genericInput.css&#10;generic&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/genericInput/genericInput.css&#10;colo&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/colorPicker/ColorPicker.tsx&#10;modelcolo&#9;FILE&#9;file://C:/Users/James/Projects/simple-cool-graph-generator/src/components/modelColorPicker/modelColorPicker.tsx" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -534,15 +480,15 @@
       <workItem from="1515292475745" duration="10891000" />
       <workItem from="1515316572539" duration="17127000" />
       <workItem from="1515382757271" duration="10721000" />
-      <workItem from="1515460000475" duration="51996000" />
+      <workItem from="1515460000475" duration="52156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118360000" />
+    <option name="totallyTimeSpent" value="118520000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="7667" y="-13" width="3866" height="2106" extended-state="6" />
+    <frame x="7667" y="-13" width="3866" height="2106" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -600,14 +546,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="973">
@@ -743,7 +681,7 @@
         <state relative-caret-position="816">
           <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -793,7 +731,7 @@
         <state relative-caret-position="1020">
           <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
             <marker date="1515550934097" expanded="true" signature="1152:1220" ph="..." />
             <marker date="1515550934097" expanded="true" signature="1370:1443" ph="..." />
             <marker date="1515550934097" expanded="true" signature="1498:1970" ph="..." />
@@ -825,7 +763,7 @@
         <state relative-caret-position="850">
           <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -854,7 +792,7 @@
     <entry file="file://$PROJECT_DIR$/src/pages/titleControl/titleControl.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -864,7 +802,7 @@
         <state relative-caret-position="1054">
           <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="false" />
             <marker date="1515555494224" expanded="true" signature="751:760" ph="..." />
           </folding>
         </state>
@@ -883,7 +821,7 @@
         <state relative-caret-position="573">
           <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -911,8 +849,8 @@
         <state relative-caret-position="986">
           <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
           <folding>
-            <element signature="e#0#56#0" expanded="true" />
-            <element signature="e#249#288#0" expanded="true" />
+            <element signature="e#0#56#0" expanded="false" />
+            <element signature="e#249#288#0" expanded="false" />
             <marker date="1515565296931" expanded="true" signature="3530:4080" ph="..." />
             <marker date="1515565296931" expanded="true" signature="3839:4080" ph="..." />
           </folding>
@@ -930,7 +868,7 @@
     <entry file="file://$PROJECT_DIR$/src/services/colorHelper.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -938,7 +876,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/dataInput.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
-          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -948,7 +886,7 @@
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -972,7 +910,7 @@
     <entry file="file://$PROJECT_DIR$/src/pages/dataControl/dataControl.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-338">
-          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
             <marker date="1515566532456" expanded="true" signature="2296:2790" ph="{...}" />
@@ -983,7 +921,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/footer/footer.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1009,7 +947,7 @@
     <entry file="file://$PROJECT_DIR$/src/models/titleModel.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
             <element signature="e#0#63#0" expanded="true" />
           </folding>
@@ -1026,8 +964,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/legendModel.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        <state relative-caret-position="850">
+          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>
@@ -1036,11 +974,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/services/store.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+        <state relative-caret-position="782">
+          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3910">
+          <caret line="115" column="51" lean-forward="false" selection-start-line="115" selection-start-column="51" selection-end-line="115" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
